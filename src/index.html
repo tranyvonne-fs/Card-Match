@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/dist/styles.css">
 </head>
+
 <body>
+    <div class="game-container">
+        <!-- Game Header -->
+        <h1>Card Match</h1>
+        <p>Use the three attempts you have to try to find all three matching pairs of cards.</p>
     
+        <!-- Attempts Counter -->
+        <div class="attempts">
+          Attempts left: <span id="attempts-left">3</span>
+        </div>
+    
+        <!-- Cards Grid -->
+        <div class="cards" id="cards-grid">
+          <!-- Cards will be generated here -->
+        </div>
+    
+        <!-- Win Message -->
+        <div class="win-message" id="win-message" style="display: none;">
+          You Won!
+        </div>
+    
+        <!-- Restart Button -->
+        <button id="restart-button" style="display: none;">Start Over!</button>
+      </div>
+
+  <script src="/dist/index.js" type="module"></script>
 </body>
+
 </html>
